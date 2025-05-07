@@ -1,0 +1,39 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.1/context",
+    {
+      "@vocab": "http://schema.org/"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "name": "Sample Crate",
+      "hasPart": [
+        {
+          "@id": "csvs/some_file.csv"
+        },
+        {
+          "@id": "another_example.txt"
+        }
+      ]
+    },
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "identifier": "ro-crate-metadata.json",
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "csvs/some_file.csv",
+      "@type": "File"
+    },
+    {
+      "@id": "another_example.txt",
+      "@type": "File"
+    }
+  ]
+}
