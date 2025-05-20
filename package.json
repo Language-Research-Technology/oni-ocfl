@@ -4,7 +4,7 @@
   "description": "Oni ocfl tools",
   "main": "index.js",
   "engines": {
-    "node": ">=20"
+    "node": ">=22"
   },
   "directories": {
     "lib": "lib",
