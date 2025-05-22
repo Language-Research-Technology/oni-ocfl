@@ -1,6 +1,6 @@
 {
   "name": "oni-ocfl",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "Oni ocfl tools",
   "main": "index.js",
   "engines": {
@@ -11,7 +11,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "node_modules/jest/bin/jest.js --runInBand",
+    "test": "mocha 'lib/**/*.spec.js'",
     "build:docs": "node_modules/.bin/jsdoc2md -f 'lib/*.js' -c jsdoc.json > docs.md"
   },
   "repository": {
@@ -32,18 +32,18 @@
     "chai": "^4.3.6",
     "clean-jsdoc-theme": "^4.2.4",
     "dotenv": "^10.0.0",
-    "jest": "^29.7.0",
     "jsdoc": "^4.0.0",
-    "jsdoc-to-markdown": "^9.1.1"
+    "jsdoc-to-markdown": "^9.1.1",
+    "mocha": "^11.4.0"
   },
   "dependencies": {
     "@ocfl/ocfl-fs": "^0.2.2",
-    "commander": "^8.3.0",
+    "commander": "^14.0.0",
     "exceljs": "^4.4.0",
     "fs-extra": "^10.0.0",
     "lodash": "^4.17.21",
     "rimraf": "^6.0.1",
-    "ro-crate": "^3.5.0",
+    "ro-crate": "^3.5.1",
     "ro-crate-html": "^0.1.6",
     "ro-crate-modes": "github:Language-Research-Technology/ro-crate-modes",
     "tmp": "^0.2.1",
