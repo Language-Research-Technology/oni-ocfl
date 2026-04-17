@@ -1,6 +1,6 @@
 {
   "name": "oni-ocfl",
-  "version": "1.7.2",
+  "version": "1.7.3",
   "description": "Oni ocfl tools",
   "main": "index.js",
   "engines": {
@@ -12,7 +12,9 @@
   },
   "scripts": {
     "test": "mocha 'lib/**/*.spec.js'",
-    "build:docs": "node_modules/.bin/jsdoc2md -f 'lib/*.js' -c jsdoc.json > docs.md"
+    "build:docs": "npm run build:docs:md && npm run build:docs:html",
+    "build:docs:md": "node_modules/.bin/jsdoc2md -f 'lib/*.js' -c jsdoc.json > docs.md",
+    "build:docs:html": "node_modules/.bin/jsdoc -c jsdoc.json"
   },
   "repository": {
     "type": "git",
@@ -43,7 +45,7 @@
     "fs-extra": "^10.0.0",
     "lodash": "^4.17.21",
     "rimraf": "^6.0.1",
-    "ro-crate": "^3.5.1",
+    "ro-crate": "^3.7.1",
     "ro-crate-html": "^0.1.6",
     "ro-crate-modes": "github:Language-Research-Technology/ro-crate-modes",
     "tmp": "^0.2.1",
