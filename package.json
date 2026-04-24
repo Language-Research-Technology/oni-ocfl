@@ -1,6 +1,6 @@
 {
   "name": "oni-ocfl",
-  "version": "1.7.3",
+  "version": "1.7.4",
   "description": "Oni ocfl tools",
   "main": "index.js",
   "engines": {
