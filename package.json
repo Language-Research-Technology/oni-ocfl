@@ -1,6 +1,6 @@
 {
   "name": "oni-ocfl",
-  "version": "1.8.0",
+  "version": "1.8.1",
   "description": "Oni ocfl tools",
   "main": "index.js",
   "engines": {
@@ -46,7 +46,7 @@
     "lodash": "^4.17.21",
     "rimraf": "^6.0.1",
     "ro-crate": "^3.7.1",
-    "ro-crate-html-lite": "^0.0.2",
+    "ro-crate-html-lite": "^0.0.6",
     "ro-crate-modes": "github:Language-Research-Technology/ro-crate-modes",
     "tmp": "^0.2.1",
     "winston": "^3.3.3"
